@@ -9,10 +9,10 @@ const Navbar = () => {
         <h3 className="text-gray-400 cursor-pointer hover:text-teal-50">
           Home
         </h3>
-        <h3 className="text-gray-400 cursor-pointer hover:text-teal-50">
+        <h3 className="hidden md:flex text-gray-400 cursor-pointer hover:text-teal-50">
           Cakes
         </h3>
-        <h3 className="text-gray-400 cursor-pointer hover:text-teal-50">
+        <h3 className="hidden md:flex text-gray-400 cursor-pointer hover:text-teal-50">
           Pastries
         </h3>
         <h3 className="text-gray-400 cursor-pointer hover:text-teal-50">
