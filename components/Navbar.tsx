@@ -1,26 +1,54 @@
 import React from "react";
-import { Button } from "./ui/button";
+import { GiCakeSlice } from "react-icons/gi";
+import { IoLocation } from "react-icons/io5";
+import { IoIosArrowDown } from "react-icons/io";
+import { IoMdSearch } from "react-icons/io";
+import { GrMapLocation } from "react-icons/gr";
+import { BsBagCheckFill } from "react-icons/bs";
+import { IoPersonCircleSharp } from "react-icons/io5";
+import { BsPersonBadgeFill } from "react-icons/bs";
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between max-w-6xl mx-auto">
-      <div className="text-white p-4 mx-4">Logo</div>
-      <div className=" flex items-center gap-8 text-white">
-        <h3 className="text-gray-400 cursor-pointer hover:text-teal-50">
-          Home
-        </h3>
-        <h3 className="hidden md:flex text-gray-400 cursor-pointer hover:text-teal-50">
-          Cakes
-        </h3>
-        <h3 className="hidden md:flex text-gray-400 cursor-pointer hover:text-teal-50">
-          Pastries
-        </h3>
-        <h3 className="text-gray-400 cursor-pointer hover:text-teal-50">
-          About Us
-        </h3>
+    <header className="flex items-center justify-between max-w-5xl mx-auto my-3">
+      <div className="flex items-center gap-6">
+        <div className="flex items-center gap-1">
+          <GiCakeSlice size={30} />
+          <p className="font-bold">CakeInbox</p>
+        </div>
+        <div className="flex items-center">
+          <IoLocation size={20} />
+          <p className="font-semibold text-sm">Location</p>
+          <IoIosArrowDown className="ml-1" />
+        </div>
       </div>
-      <Button>Login/SignUp</Button>
-    </div>
+      <div className="flex items-center bg-gray-100">
+        <input
+          className="bg-gray-100 px-10 py-1 font-serif"
+          type="text"
+          placeholder="Search Cakes"
+        />
+        <IoMdSearch size={20} className="mr-4" />
+      </div>
+      <div className="flex items-center gap-4">
+        <div className="flex flex-col justify-center items-center gap-1 cursor-pointer">
+          <GrMapLocation className="" size={20} />
+          <p className="text-xs font-semibold">Track Order</p>
+        </div>
+        <div className="flex flex-col justify-center items-center gap-1 cursor-pointer">
+          <BsBagCheckFill size={20} />
+          <p className="text-xs font-semibold">Cart</p>
+        </div>
+        <div className="flex flex-col justify-center items-center gap-1 cursor-pointer">
+          <IoPersonCircleSharp size={20} />
+          <p className="text-xs font-semibold">Sign In</p>
+        </div>
+        <div className="flex flex-col justify-center items-center gap-1 cursor-pointer">
+          <BsPersonBadgeFill size={20} />
+          <p className="text-xs font-semibold">About Us</p>
+        </div>
+      </div>
+    </header>
   );
 };
 
