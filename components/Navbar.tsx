@@ -7,6 +7,7 @@ import { GrMapLocation } from "react-icons/gr";
 import { BsBagCheckFill } from "react-icons/bs";
 import { IoPersonCircleSharp } from "react-icons/io5";
 import { BsPersonBadgeFill } from "react-icons/bs";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -31,22 +32,34 @@ const Navbar = () => {
         <IoMdSearch size={20} className="mr-4" />
       </div>
       <div className="flex items-center gap-4">
-        <div className="flex flex-col justify-center items-center gap-1 cursor-pointer">
+        <Link
+          href="/"
+          className="flex flex-col justify-center items-center gap-1 cursor-pointer"
+        >
           <GrMapLocation className="" size={20} />
           <p className="text-xs font-semibold">Track Order</p>
-        </div>
-        <div className="flex flex-col justify-center items-center gap-1 cursor-pointer">
+        </Link>
+        <Link
+          href="/cart"
+          className="flex flex-col justify-center items-center gap-1 cursor-pointer"
+        >
           <BsBagCheckFill size={20} />
           <p className="text-xs font-semibold">Cart</p>
-        </div>
-        <div className="flex flex-col justify-center items-center gap-1 cursor-pointer">
+        </Link>
+        <Link
+          href="/"
+          className="flex flex-col justify-center items-center gap-1 cursor-pointer"
+        >
           <IoPersonCircleSharp size={20} />
           <p className="text-xs font-semibold">Sign In</p>
-        </div>
-        <div className="flex flex-col justify-center items-center gap-1 cursor-pointer">
+        </Link>
+        <Link
+          href="/"
+          className="flex flex-col justify-center items-center gap-1 cursor-pointer"
+        >
           <BsPersonBadgeFill size={20} />
           <p className="text-xs font-semibold">About Us</p>
-        </div>
+        </Link>
       </div>
     </header>
   );

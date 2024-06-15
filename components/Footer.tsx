@@ -9,7 +9,7 @@ import { TbBrandYoutube } from "react-icons/tb";
 
 const Footer = () => {
   return (
-    <div className="flex gap-8 max-w-5xl mx-auto bg-gray-100 border rounded-xl p-10">
+    <div className="flex gap-8 max-w-5xl mx-auto bg-gray-100 border rounded-xl p-10 shadow-xl">
       <div className="flex flex-col gap-4 text-sm my-4">
         <div className="flex items-center gap-1">
           <GiCakeSlice size={30} />
@@ -54,14 +54,14 @@ const Footer = () => {
       <div className="flex flex-col gap-2 items-center my-2">
         <p className="text-sm my-2 font-mono font-semibold text-gray-700" >Simplify your experience with our app.</p>
         <Image
-          className="border rounded-lg"
+          className="border rounded-lg cursor-pointer"
           src="/Images/apple.jpg"
           height={150}
           width={150}
           alt="error"
         />
         <Image
-          className="border rounded-lg"
+          className="border rounded-lg cursor-pointer"
           src="/Images/google.jpg"
           height={150}
           width={150}
