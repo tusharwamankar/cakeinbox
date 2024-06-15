@@ -11,8 +11,7 @@ export default function Home() {
       <Mainpage />
       <Showcase />
       <Review />
-      {/* <AccountInfo /> */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

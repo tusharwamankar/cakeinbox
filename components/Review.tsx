@@ -1,12 +1,18 @@
 import React from "react";
 import Reviewbox from "./Reviewbox";
+import { Button } from "./ui/button";
 
 const Review = () => {
   return (
-    <div className="bg-slate-200">
+    <div className="">
       <div className="max-w-5xl mx-auto p-6">
-        <h1 className="font-bold font-sans">Review : </h1>
-        <div className="">
+        <div className="flex items-center justify-between">
+          <h1 className="font-bold font-sans">Customer Review : </h1>
+          <Button>View All</Button>
+        </div>
+        <div className="flex items-center justify-center gap-2">
+          <Reviewbox />
+          <Reviewbox />
           <Reviewbox />
         </div>
       </div>
